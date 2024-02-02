@@ -1,5 +1,6 @@
 {
     "files.associations": {
-        "SWITCH.C": "cpp"
+        "SWITCH.C": "cpp",
+        "iostream": "cpp"
     }
 }
