@@ -17,7 +17,7 @@ int main(void)
 
         if(r<n)
         {
-            printf("guess the higher numeber\n ");
+            printf("guess the higher numeber\n\n ");
         }
         else if(r>n)
         {
