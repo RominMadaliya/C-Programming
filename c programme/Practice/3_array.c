@@ -2,47 +2,38 @@
 
 int main()
 {
-int a1[5];
-int a2[6];
-int a3[20];
+    int student[5][4];
+    float tot[5],per[5];
 
-for(int i=0;i<5;i++)
-{
-    printf("Enter the a1[%d] element :",i+1);
-    scanf("%d",&a1[i]);
+    for(int i=0;i<5;i++)
+    {
+         tot[i]=0;
+         per[i]=0;
+        for(int j=0;j<4;j++)
+        {
+            printf("\nEnter the studenrt %d subject %d mark :",i+1,j+1);
+            scanf("%d",&student[i][j]);
+           
+            tot[i]+=student[i][j];
+        }
+       
 
-}
-for(int i=0;i<6;i++)
-{
-    printf("Enter the a2[%d] element :",i+1);
-    scanf("%d",&a2[i]);
+        per[i]=(tot[i]*100)/300;
+        
 
-}
+          printf("\n");
+    }
 
-printf("---------------------------------------------");
+    for(int i=0;i<5;i++)
+    {
+        for(int j=0;j<4;j++)
+        {
+            printf("\nthe studenrt %d subject %d mark %d",i+1,j+1,student[i][j]); 
+        }
+        printf("\nThe total marks of student %d is %.2f",i+1,tot[i]);
+        printf("\nThe Percentage of student %d is %.2f",i+1,per[i]);
 
-for(int i=0;i<5;i++)
-{
-    printf("\nEnter the a1[%d] element is %d:",i+1,a1[i]);
-
-}
-for(int i=0;i<6;i++)
-{
-    printf("\nEnter the a2[%d] element is %d:",i+1,a2[i]);
-
-}
-
-printf("-----------------------------------------");
-
-for(int i=0;a1[i]!='\0';i++)
-{
-    a3[i]=a1[i];
-}
-
-for(int i=0;i<6;i++)
-{
-    printf("\nEnter the a3[%d] element is %d:",i+1,a2[i]);
-
-}
-
+          printf("\n");
+    }
+    return 0;
 }
