@@ -30,6 +30,7 @@ int main(void)
     }
 
     else if (n == 2)
+    
     {
 
         area_of_square();

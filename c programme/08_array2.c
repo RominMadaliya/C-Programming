@@ -1,13 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int total=0;
+    
     float percentage=0;
 int student[5];
 int marks[3];
 
 for( int i=1; i<=5; i++)
 {
+    int total=0;
     for ( int j=0; j<3; j++)
     {
     printf("\nenter the marks of  student %d subject %d: ",i,j+1);

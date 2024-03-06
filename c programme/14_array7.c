@@ -1,4 +1,4 @@
-#include<stdio.h>f
+#include<stdio.h>
 int main(void){
     int n[3][3]={{1,2,3},{0,5,6},{0,7,8}};
    

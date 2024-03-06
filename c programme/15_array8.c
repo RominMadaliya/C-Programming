@@ -47,7 +47,7 @@ int main(void)
         }
     
         int v=0;
-        printf("%d\t  %d\t   %d\t   %d\t    %d\t    %.2f\t %c\n", j + 1, marks[i][v], marks[i][v + 1], marks[i][v + 2], total[j], percentage[j], a);
+        printf("%d\t  %d\t   %d\t   %d\t    %d\t    %.2f\t %c\n", j + 1, marks[i][v], marks[i][v + 1], marks[i][v + 2], total[i], percentage[i], a);
         v++;
     }
 }

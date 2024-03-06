@@ -8,6 +8,7 @@ void swapping_value_3();
 int main(void)
 {
     swapping_value_3();
+    gst_netbill();
 }
 
 void simple_interest()
